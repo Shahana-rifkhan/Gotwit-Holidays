@@ -1,0 +1,74 @@
+/* =====================================
+   MOBILE SEARCH DROPDOWN FIX
+   ===================================== */
+
+   @media(max-width:820px){
+
+    .nav-search{
+        position:static !important;
+    }
+
+
+    .nav-search-form{
+        position:absolute !important;
+        top:82px !important;
+        left:50% !important;
+        right:auto !important;
+        transform:translateX(-50%) !important;
+
+        width:calc(100vw - 32px) !important;
+        height:52px !important;
+
+        border-radius:30px !important;
+        z-index:9999 !important;
+    }
+
+
+    .nav-search.open .nav-search-form{
+        width:calc(100vw - 32px) !important;
+    }
+
+
+    .nav-search-form input{
+        font-size:16px !important;
+        padding-left:20px !important;
+    }
+
+
+    .nav-search-form button{
+        width:48px !important;
+        height:48px !important;
+    }
+
+}
+
+/* Mobile responsive improvements */
+*{box-sizing:border-box}
+html,body{max-width:100%;overflow-x:hidden}
+img{max-width:100%;height:auto}
+iframe{max-width:100%}
+.container,.wrapper,.content,.section-inner{max-width:100%;}
+@media(max-width:768px){
+  body{font-size:15px}
+  h1{font-size:34px!important;line-height:1.15!important}
+  h2{font-size:28px!important;line-height:1.2!important}
+  h3{font-size:22px!important}
+  .container{padding-left:18px!important;padding-right:18px!important}
+  .hero,.banner,.page-hero{min-height:auto!important;padding:50px 18px!important}
+  .hero-content,.hero-text{width:100%!important;text-align:center}
+  .grid,.cards,.card-grid,.tour-grid,.offers-grid,.services-grid{grid-template-columns:1fr!important}
+  .row,.flex,.columns{flex-direction:column!important}
+  .column,.col,.col-md-6,.col-lg-4,.col-lg-6{width:100%!important;max-width:100%!important}
+  table{display:block;width:100%;overflow-x:auto}
+  .btn,.button,a.btn{display:inline-flex;justify-content:center;max-width:100%;}
+  .navbar,.nav,.header-inner{flex-wrap:wrap!important}
+  .menu,.nav-links{width:100%!important;flex-direction:column!important}
+  .footer-grid{grid-template-columns:1fr!important}
+  .deal-card,.tour-card,.service-card{margin-bottom:20px}
+}
+@media(max-width:480px){
+  h1{font-size:28px!important}
+  h2{font-size:24px!important}
+  .container{padding-left:14px!important;padding-right:14px!important}
+  .btn,.button{width:100%!important}
+}
